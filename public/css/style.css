@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.none {
+    display: none;
+}
+
+body {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+li {
+    list-style: none;
+}
+
+#headstart {
+    margin-left: -50px;
+}
+
+#boardgame, #rules {
+    height: 80vh;
+    width: 80vh;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#spacerules {
+    height: 20px;
+}
+
+.title button {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.block {
+    border: 0.5px solid darkgrey;
+    box-sizing: border-box;
+}
+
+#startGame {
+    margin: 30px 0;
+}
+
+#boardgame>div {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.title>div {
+    width: 80vh;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.title p {
+    font-size: 18px;
+}
+
+.square {
+    height: 80vh;
+    width: 80vh;
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rules1 {
+    padding-top: 150px;
+}
+
+#rules2 {
+    padding-top: 100px;
+}

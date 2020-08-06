@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Chocographe</title>
+        <link rel="stylesheet" href="public/css/style.css">
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    </head>
+    <body class="flex">
+        <div class="title flex">
+            <h1>Tape Choco !</h1>
+            <div id="headstart" class="flex">
+                <p>Temps restant : <span id="time"></span></p>
+                <button id="startGame">Start</button>
+                <p>Score : <span id="score"></span></p>
+            </div>
+        </div>
+        <div id="rules">
+            <div id="rules1">
+                <h2>Règles du jeux :</h2>
+                <div id="spacerules"></div>
+                <ol>
+                    <li>Chaque partie dure 30 secondes !</li>
+                    <li>Pour gagner une partie, il te faut atteindre 30 points !</li>
+                    <li>Quand un chocobo apparaît, cliques dessus pour gagner 1 point !</li>
+                    <li>Tu perds 1 point à chaque mauvais clique !</li>
+                    <li>Tu perds 1 point à chaque inaction !</li>
+                </ol>
+            </div>
+            <div id="rules2">
+                <h2>Paramètres de jeu :</h2>
+                <div id="spacerules"></div>
+                <label for="boardSize">Taille du plateau : </label>
+                <select name="boardSize" id="boardSize">
+                    <option value="9">3x3</option>
+                    <option value="16">4x4</option>
+                    <option value="25">5x5</option>
+                </select>
+            </div>
+        </div>
+        <div id="boardgame" class="flex none"></div>
+        <div id="victory" class="none square">
+            <p>Vous avez gagné !</p>
+        </div>
+        <div id="defeat" class="none square">
+            <p>Vous avez perdu !</p>
+        </div>
+        <script src="public/js/script.js"></script>
+    </body>
+</html>
